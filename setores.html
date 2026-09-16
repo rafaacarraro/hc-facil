@@ -1,0 +1,297 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Setores - HC Fácil</title>
+
+    <!-- Ícones -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <main class="app">
+
+        <!-- CABEÇALHO -->
+
+        <header class="screen-header">
+
+            <button
+                class="back-button"
+                type="button"
+                onclick="window.location.href='index.html'"
+                aria-label="Voltar para a página inicial"
+            >
+                <i data-lucide="arrow-left"></i>
+            </button>
+
+            <h1>
+                Setores
+            </h1>
+
+        </header>
+
+
+        <!-- APRESENTAÇÃO -->
+
+        <section class="welcome">
+
+            <span class="section-label">
+                HC FÁCIL
+            </span>
+
+            <h1>
+                Encontre um setor
+            </h1>
+
+            <p>
+                Selecione o setor que deseja localizar
+                dentro do Complexo Hospital de Clínicas.
+            </p>
+
+        </section>
+
+
+        <!-- PESQUISA -->
+
+        <section class="search">
+
+            <label for="sectorSearch">
+                Pesquisar setor
+            </label>
+
+            <div class="search-box">
+
+                <i data-lucide="search"></i>
+
+                <input
+                    type="text"
+                    id="sectorSearch"
+                    placeholder="Digite o nome do setor"
+                    autocomplete="off"
+                >
+
+            </div>
+
+            <small>
+                Pesquise por ambulatório, laboratório, farmácia ou outro setor.
+            </small>
+
+        </section>
+
+
+        <!-- LISTA DE SETORES -->
+
+        <section class="locations">
+
+            <p class="section-title">
+                Setores disponíveis
+            </p>
+
+
+            <!-- AMBULATÓRIO -->
+
+            <button
+                class="location-card"
+                type="button"
+                data-sector="ambulatório ambulatorio consultas atendimentos"
+                onclick="window.location.href='local.html?setor=ambulatorio'"
+            >
+
+                <div class="location-icon">
+                    <i data-lucide="building-2"></i>
+                </div>
+
+                <div class="location-info">
+
+                    <strong>
+                        Ambulatório
+                    </strong>
+
+                    <small>
+                        Consultas e atendimentos
+                    </small>
+
+                </div>
+
+                <i
+                    data-lucide="chevron-right"
+                    class="arrow"
+                ></i>
+
+            </button>
+
+
+            <!-- LABORATÓRIOS -->
+
+            <button
+                class="location-card"
+                type="button"
+                data-sector="laboratório laboratorios exames laboratoriais"
+                onclick="window.location.href='local.html?setor=laboratorio'"
+            >
+
+                <div class="location-icon">
+                    <i data-lucide="test-tube"></i>
+                </div>
+
+                <div class="location-info">
+
+                    <strong>
+                        Laboratórios
+                    </strong>
+
+                    <small>
+                        Exames laboratoriais
+                    </small>
+
+                </div>
+
+                <i
+                    data-lucide="chevron-right"
+                    class="arrow"
+                ></i>
+
+            </button>
+
+
+            <!-- FARMÁCIA -->
+
+            <button
+                class="location-card"
+                type="button"
+                data-sector="farmácia farmacia medicamentos"
+                onclick="window.location.href='local.html?setor=farmacia'"
+            >
+
+                <div class="location-icon">
+                    <i data-lucide="pill"></i>
+                </div>
+
+                <div class="location-info">
+
+                    <strong>
+                        Farmácia
+                    </strong>
+
+                    <small>
+                        Medicamentos
+                    </small>
+
+                </div>
+
+                <i
+                    data-lucide="chevron-right"
+                    class="arrow"
+                ></i>
+
+            </button>
+
+
+            <!-- INTERNAÇÃO -->
+
+            <button
+                class="location-card"
+                type="button"
+                data-sector="internação internacao unidade de internação"
+                onclick="window.location.href='local.html?setor=internacao'"
+            >
+
+                <div class="location-icon">
+                    <i data-lucide="bed"></i>
+                </div>
+
+                <div class="location-info">
+
+                    <strong>
+                        Internação
+                    </strong>
+
+                    <small>
+                        Unidade de internação
+                    </small>
+
+                </div>
+
+                <i
+                    data-lucide="chevron-right"
+                    class="arrow"
+                ></i>
+
+            </button>
+
+
+            <!-- UTI -->
+
+            <button
+                class="location-card"
+                type="button"
+                data-sector="uti unidade de terapia intensiva"
+                onclick="window.location.href='local.html?setor=uti'"
+            >
+
+                <div class="location-icon">
+                    <i data-lucide="heart-pulse"></i>
+                </div>
+
+                <div class="location-info">
+
+                    <strong>
+                        UTI
+                    </strong>
+
+                    <small>
+                        Unidade de terapia intensiva
+                    </small>
+
+                </div>
+
+                <i
+                    data-lucide="chevron-right"
+                    class="arrow"
+                ></i>
+
+            </button>
+
+
+            <!-- MENSAGEM DE RESULTADO -->
+
+            <p
+                id="noResults"
+                class="no-results"
+                style="display: none;"
+            >
+                Nenhum setor encontrado.
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <!-- JavaScript -->
+
+    <script src="script.js"></script>
+
+    <script>
+        if (typeof lucide !== "undefined") {
+            lucide.createIcons();
+        }
+    </script>
+
+</body>
+
+</html>

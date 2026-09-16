@@ -1,0 +1,240 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>HC Fácil</title>
+
+    <!-- Ícones Lucide -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <main class="app">
+
+        <!-- LOGO -->
+
+        <header class="header">
+
+            <img
+                src="image/logohc.png"
+                alt="Logo do Hospital de Clínicas"
+                class="logo"
+            >
+
+        </header>
+
+
+        <!-- APRESENTAÇÃO -->
+
+        <section class="welcome">
+
+            <span class="section-label">
+                BEM-VINDO AO HC FÁCIL
+            </span>
+
+            <h1>
+                Encontre seu local no CHC
+            </h1>
+
+            <p>
+                Consulte setores, entradas e localizações
+                dentro do Complexo Hospital de Clínicas.
+            </p>
+
+        </section>
+
+
+        <!-- PESQUISA -->
+
+        <section class="search">
+
+            <label for="homeSearchInput">
+                O que você está procurando?
+            </label>
+
+            <div class="search-box" id="searchBox">
+
+                <i data-lucide="search"></i>
+
+                <input
+                    type="text"
+                    id="homeSearchInput"
+                    placeholder="Digite o nome do setor ou local"
+                    autocomplete="off"
+                >
+
+            </div>
+
+            <small>
+                Exemplo: maternidade, farmácia ou laboratório
+            </small>
+
+        </section>
+
+
+        <!-- OPÇÕES PRINCIPAIS -->
+
+        <section class="options">
+
+            <!-- SETORES -->
+
+            <button
+                class="option-button"
+                id="sectorsButton"
+                type="button"
+            >
+
+                <div class="icon-box">
+
+                    <i data-lucide="building-2"></i>
+
+                </div>
+
+                <div class="option-text">
+
+                    <strong>
+                        Setores
+                    </strong>
+
+                    <small>
+                        Encontre um setor do hospital
+                    </small>
+
+                </div>
+
+                <i data-lucide="chevron-right"></i>
+
+            </button>
+
+
+            <!-- ENTRADAS -->
+
+            <button
+                class="option-button"
+                id="entrancesButton"
+                type="button"
+            >
+
+                <div class="icon-box">
+
+                    <i data-lucide="door-open"></i>
+
+                </div>
+
+                <div class="option-text">
+
+                    <strong>
+                        Entradas
+                    </strong>
+
+                    <small>
+                        Consulte as entradas do complexo
+                    </small>
+
+                </div>
+
+                <i data-lucide="chevron-right"></i>
+
+            </button>
+
+        </section>
+
+        <a href="exames.html" class="map-button">
+    <i data-lucide="clipboard-list"></i>
+
+    <span>Consultar exames por andar
+        Prédio Central </span>
+
+    <i data-lucide="arrow-right"></i>
+
+        </a>
+
+         <a href="ambulatorios.html" class="map-button">
+    <i data-lucide="stethoscope"></i>
+    <span>Ambulatórios Anexo B</span>
+    <i data-lucide="arrow-right"></i>
+
+
+        </a>
+        
+        <a href="maternidade.html" class="map-button">
+
+    <i data-lucide="baby"></i>
+
+    <span>
+        Maternidade - Anexo A
+    </span>
+
+    <i data-lucide="arrow-right"></i>
+
+</a>
+
+
+        <!-- MAPA -->
+
+        <button
+            class="map-button"
+            id="mapButton"
+            type="button"
+        >
+
+            <i data-lucide="map"></i>
+
+            <span>
+                Ver mapa ilustrativo do complexo
+            </span>
+
+            <i data-lucide="arrow-right"></i>
+
+        </button>
+
+
+        <!-- RODAPÉ -->
+
+        <footer>
+
+            <span>
+                HC Fácil
+            </span>
+
+            <span>
+                •
+            </span>
+
+            <span>
+                Orientação dentro do complexo
+            </span>
+
+        </footer>
+
+
+    </main>
+
+
+    <!-- JavaScript -->
+
+    <script src="script.js"></script>
+
+    <script>
+        if (typeof lucide !== "undefined") {
+            lucide.createIcons();
+        }
+    </script>
+
+</body>
+
+</html>

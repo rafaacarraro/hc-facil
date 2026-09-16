@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Entradas - HC Fácil</title>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <main class="app">
+
+        <!-- CABEÇALHO -->
+
+        <header class="screen-header">
+
+            <button
+                class="back-button"
+                type="button"
+                onclick="window.location.href='index.html'"
+                aria-label="Voltar para a página inicial"
+            >
+                <i data-lucide="arrow-left"></i>
+            </button>
+
+            <h1>
+                Entradas
+            </h1>
+
+        </header>
+
+
+        <!-- APRESENTAÇÃO -->
+
+        <section class="welcome">
+
+            <span class="section-label">
+                HC FÁCIL
+            </span>
+
+            <h2>
+                Escolha uma entrada
+            </h2>
+
+            <p>
+                Consulte os acessos do Complexo Hospital de Clínicas
+                e veja sua localização no mapa.
+            </p>
+
+        </section>
+
+
+        <!-- LISTA DE ENTRADAS -->
+
+        <section class="locations">
+
+            <h3 class="section-title">
+                Entradas disponíveis
+            </h3>
+
+
+            <!-- ENTRADA DE VISITANTES -->
+
+            <article class="location-card">
+
+                <div class="location-icon">
+                    <i data-lucide="door-open"></i>
+                </div>
+
+                <div class="location-info">
+
+                    <h4>
+                        Entrada de Visitantes
+                    </h4>
+
+                    <p class="location-building">
+                        Prédio Central
+                    </p>
+
+                    <p class="location-address">
+                        <i data-lucide="map-pin"></i>
+                        Rua General Carneiro, 181
+                    </p>
+
+                    <button
+                        class="location-button"
+                        type="button"
+                        onclick="window.location.href='mapa.html?local=central'"
+                    >
+                        <i data-lucide="map-pin"></i>
+                        <span>Ver localização</span>
+                        <i data-lucide="arrow-right"></i>
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- ENTRADA DA MATERNIDADE -->
+
+            <article class="location-card">
+
+                <div class="location-icon">
+                    <i data-lucide="hospital"></i>
+                </div>
+
+                <div class="location-info">
+
+                    <h4>
+                        Entrada da Maternidade
+                    </h4>
+
+                    <p class="location-building">
+                        Anexo A
+                    </p>
+
+                    <p class="location-address">
+                        <i data-lucide="map-pin"></i>
+                        Rua General Carneiro, 181
+                    </p>
+
+                    <button
+                        class="location-button"
+                        type="button"
+                        onclick="window.location.href='mapa.html?local=maternidade'"
+                    >
+                        <i data-lucide="map-pin"></i>
+                        <span>Ver localização</span>
+                        <i data-lucide="arrow-right"></i>
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- ENTRADA DE AMBULÂNCIAS -->
+
+            <article class="location-card">
+
+                <div class="location-icon">
+                    <i data-lucide="ambulance"></i>
+                </div>
+
+                <div class="location-info">
+
+                    <h4>
+                        Entrada de Ambulâncias
+                    </h4>
+
+                    <p class="location-building">
+                        Anexo B
+                    </p>
+
+                    <p class="location-address">
+                        <i data-lucide="map-pin"></i>
+                        Rua General Carneiro, 181
+                    </p>
+
+                    <button
+                        class="location-button"
+                        type="button"
+                        onclick="window.location.href='mapa.html?local=anexo-b'"
+                    >
+                        <i data-lucide="map-pin"></i>
+                        <span>Ver localização</span>
+                        <i data-lucide="arrow-right"></i>
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- ENTRADA DE LABORATÓRIOS -->
+
+            <article class="location-card">
+
+                <div class="location-icon">
+                    <i data-lucide="flask-conical"></i>
+                </div>
+
+                <div class="location-info">
+
+                    <h4>
+                        Entrada de Laboratórios
+                    </h4>
+
+                    <p class="location-building">
+                        Laboratórios — Anexos G/D
+                    </p>
+
+                    <p class="location-address">
+                        <i data-lucide="map-pin"></i>
+                        Rua Padre Camargo, 280
+                    </p>
+
+                    <button
+                        class="location-button"
+                        type="button"
+                        onclick="window.location.href='mapa.html?local=laboratorios'"
+                    >
+                        <i data-lucide="map-pin"></i>
+                        <span>Ver localização</span>
+                        <i data-lucide="arrow-right"></i>
+                    </button>
+
+                </div>
+
+            </article>
+
+        </section>
+
+
+        <!-- RODAPÉ -->
+
+        <footer class="app-footer">
+
+            <strong>
+                HC Fácil
+            </strong>
+
+            <span>
+                •
+            </span>
+
+            <span>
+                Orientação dentro do complexo
+            </span>
+
+        </footer>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+    <script>
+        if (typeof lucide !== "undefined") {
+            lucide.createIcons();
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,243 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Localização - HC Fácil</title>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <main class="app">
+
+        <!-- CABEÇALHO -->
+
+        <header class="screen-header">
+
+            <button
+                class="back-button"
+                type="button"
+                onclick="window.location.href='setores.html'"
+                aria-label="Voltar para a página de setores"
+            >
+                <i data-lucide="arrow-left"></i>
+            </button>
+
+            <h1>
+                Localização
+            </h1>
+
+        </header>
+
+
+        <!-- INFORMAÇÕES DO SETOR -->
+
+        <section class="local-details">
+
+            <span class="section-label">
+                HC FÁCIL
+            </span>
+
+
+            <div class="local-icon">
+
+                <i
+                    id="localIcon"
+                    data-lucide="building-2"
+                ></i>
+
+            </div>
+
+
+            <h2 id="localName">
+                Ambulatório
+            </h2>
+
+
+            <p id="localDescription">
+                Consultas e atendimentos
+            </p>
+
+
+            <!-- ENTRADA RECOMENDADA -->
+
+            <div class="info-card">
+
+                <div class="info-icon">
+                    <i data-lucide="door-open"></i>
+                </div>
+
+                <div>
+
+                    <small>
+                        Entrada recomendada
+                    </small>
+
+                    <strong id="localEntrance">
+                        Entrada de Visitantes
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <!-- LOCALIZAÇÃO DO SETOR -->
+
+            <div class="info-card">
+
+                <div class="info-icon">
+                    <i data-lucide="map-pin"></i>
+                </div>
+
+                <div>
+
+                    <small>
+                        Localização do setor
+                    </small>
+
+                    <strong id="localBlock">
+                        Prédio Central
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- BOTÃO PARA O MAPA -->
+
+        <button
+            class="map-button"
+            id="mapButtonLocal"
+            type="button"
+        >
+
+            <i data-lucide="map"></i>
+
+            <span>
+                Ver localização no mapa
+            </span>
+
+            <i data-lucide="arrow-right"></i>
+
+        </button>
+
+    </main>
+
+
+    <!-- JAVASCRIPT PRINCIPAL -->
+
+    <script src="script.js"></script>
+
+
+    <!-- DADOS DOS SETORES -->
+
+    <script>
+
+        const parametrosLocal =
+            new URLSearchParams(window.location.search);
+
+        const setorSelecionado =
+            parametrosLocal.get("setor") || "ambulatorio";
+
+
+        const setores = {
+
+            ambulatorio: {
+                nome: "Ambulatório",
+                descricao: "Consultas e atendimentos",
+                entrada: "Entrada de Visitantes",
+                localizacao: "Prédio Central",
+                mapa: "central"
+            },
+
+            laboratorio: {
+                nome: "Laboratórios",
+                descricao: "Exames laboratoriais",
+                entrada: "Entrada de Laboratórios",
+                localizacao: "Rua Padre Camargo, 280 — Anexos G/D",
+                mapa: "laboratorios"
+            },
+
+            farmacia: {
+                nome: "Farmácia",
+                descricao: "Medicamentos",
+                entrada: "Entrada de Visitantes",
+                localizacao: "Ao lado da Maternidade",
+                mapa: "farmacia"
+            },
+
+            internacao: {
+                nome: "Internação",
+                descricao: "Unidade de internação",
+                entrada: "Entrada de Visitantes",
+                localizacao: "Prédio Central",
+                mapa: "central"
+            },
+
+            uti: {
+                nome: "UTI",
+                descricao: "Unidade de terapia intensiva",
+                entrada: "Entrada do Anexo B",
+                localizacao: "Anexo H — UTI",
+                mapa: "anexo-b"
+            }
+
+        };
+
+
+        const setor =
+            setores[setorSelecionado] || setores.ambulatorio;
+
+
+        document.getElementById("localName").textContent =
+            setor.nome;
+
+
+        document.getElementById("localDescription").textContent =
+            setor.descricao;
+
+
+        document.getElementById("localEntrance").textContent =
+            setor.entrada;
+
+
+        document.getElementById("localBlock").textContent =
+            setor.localizacao;
+
+
+        document
+            .getElementById("mapButtonLocal")
+            .addEventListener("click", function () {
+
+                window.location.href =
+                    "mapa.html?local=" + setor.mapa;
+
+            });
+
+
+        if (typeof lucide !== "undefined") {
+            lucide.createIcons();
+        }
+
+    </script>
+
+</body>
+
+</html>

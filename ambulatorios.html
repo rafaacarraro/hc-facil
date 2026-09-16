@@ -1,0 +1,231 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ambulatórios — Anexo B</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+        /* PADRÃO EXCLUSIVO DOS AMBULATÓRIOS DO ANEXO B */
+
+        .anexo-b-list .floor-item {
+            overflow: hidden;
+        }
+
+        .anexo-b-list .floor-item ul {
+            display: block;
+            list-style-type: disc !important;
+            margin: 0 !important;
+            padding: 16px 20px 20px 32px !important;
+            color: var(--texto);
+            font-size: 16px;
+            line-height: 1.45;
+        }
+
+        .anexo-b-list .floor-item ul li {
+            display: list-item;
+            list-style-type: disc !important;
+            margin: 0 0 12px !important;
+            padding: 0 !important;
+            line-height: 1.45;
+        }
+
+        .anexo-b-list .floor-item ul li:last-child {
+            margin-bottom: 0 !important;
+        }
+
+        .anexo-b-list .floor-item ul li strong {
+            font-weight: 700;
+            color: var(--texto);
+        }
+
+        .anexo-b-list .floor-item ul li:has(strong) {
+            margin-top: 14px !important;
+        }
+
+        .anexo-b-list .floor-item ul li:first-child {
+            margin-top: 0 !important;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header-content">
+
+            <a href="index.html" class="logo">
+                <img
+                    src="image/logohc.png"
+                    alt="Logo do Hospital de Clínicas"
+                >
+            </a>
+
+            <a href="index.html" class="back-button">
+                <i data-lucide="arrow-left"></i>
+                Voltar
+            </a>
+
+        </div>
+    </header>
+
+    <main class="page-container">
+
+        <section class="page-intro">
+            <h1>Ambulatórios Anexo B</h1>
+
+            <p>
+                Consulte os ambulatórios e serviços disponíveis em cada andar
+                do Anexo B.
+            </p>
+        </section>
+
+        <section
+            class="floors-list anexo-b-list"
+            aria-label="Lista de andares do Anexo B"
+        >
+
+            <!-- TÉRREO -->
+
+            <details class="floor-item">
+                <summary>Térreo</summary>
+
+                <ul>
+                    <li><strong>SAM 1:</strong></li>
+                    <li>Ortopedia</li>
+                    <li>Cirurgia do Aparelho Digestivo</li>
+                    <li>Cirurgia Pediátrica</li>
+
+                    <li><strong>SAM 2:</strong></li>
+                    <li>Pediatria</li>
+                </ul>
+            </details>
+
+
+            <!-- 1º ANDAR -->
+
+            <details class="floor-item">
+                <summary>1º andar</summary>
+
+                <ul>
+                    <li><strong>SAM 3:</strong></li>
+                    <li>Cirurgia Plástica</li>
+                    <li>Cirurgia Vascular</li>
+                    <li>Cardiologia</li>
+                    <li>Pneumologia Pediátrica</li>
+                    <li>Cirurgia Bariátrica</li>
+                    <li>Nutrição</li>
+
+                    <li><strong>SAM 4:</strong></li>
+                    <li>Dermatologia</li>
+
+                    <li><strong>SAM 5:</strong></li>
+                    <li>Gastroenterologia</li>
+                    <li>Hepatologia</li>
+                    <li>Geriatria</li>
+                    <li>Psicologia</li>
+                    <li>Cirurgia Vascular</li>
+                    <li>Infectologia Pediátrica</li>
+
+                    <li><strong>SAM 6:</strong></li>
+                    <li>Reumatologia</li>
+                </ul>
+            </details>
+
+
+            <!-- 2º ANDAR -->
+
+            <details class="floor-item">
+                <summary>2º andar</summary>
+
+                <ul>
+                    <li><strong>SAM 7:</strong></li>
+                    <li>Urologia</li>
+
+                    <li><strong>SAM 8:</strong></li>
+                    <li>Anestesiologia</li>
+                </ul>
+            </details>
+
+
+            <!-- 3º ANDAR -->
+
+            <details class="floor-item">
+                <summary>3º andar</summary>
+
+                <ul>
+                    <li>Unidade de Processamento de Materiais Esterilizados</li>
+                </ul>
+            </details>
+
+
+            <!-- 4º ANDAR -->
+
+            <details class="floor-item">
+                <summary>4º andar</summary>
+
+                <ul>
+                    <li><strong>SAM 15:</strong></li>
+                    <li>Ambulatório TMO</li>
+                    <li>Hospital Dia TMO</li>
+                    <li>Ambulatório Hematologia</li>
+                </ul>
+            </details>
+
+
+            <!-- 5º ANDAR -->
+
+            <details class="floor-item">
+                <summary>5º andar</summary>
+
+                <ul>
+                    <li><strong>SAM 19:</strong></li>
+                    <li>Ambulatório Otorrinolaringologia</li>
+                </ul>
+            </details>
+
+
+            <!-- 6º ANDAR -->
+
+            <details class="floor-item">
+                <summary>6º andar</summary>
+
+                <ul>
+                    <li><strong>SAM 25:</strong></li>
+                    <li>Ambulatório Neurologia</li>
+                </ul>
+            </details>
+
+
+            <!-- 7º ANDAR -->
+
+            <details class="floor-item">
+                <summary>7º andar</summary>
+
+                <ul>
+                    <li><strong>SAM 18:</strong></li>
+                    <li>Serviço de Medicina Física e Reabilitação</li>
+                    <li>Terapia Ocupacional</li>
+                    <li>Anfiteatro</li>
+                </ul>
+            </details>
+
+        </section>
+
+    </main>
+
+    <footer class="app-footer">
+        <p>HC Fácil — Orientação no Complexo Hospital de Clínicas</p>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+
+</body>
+</html>

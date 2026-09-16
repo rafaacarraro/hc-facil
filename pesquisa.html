@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pesquisa - HC Fácil</title>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="app">
+
+        <header class="screen-header">
+
+            <button class="back-button" onclick="window.location.href='index.html'">
+                <i data-lucide="arrow-left"></i>
+            </button>
+
+            <h1>Pesquisar</h1>
+
+        </header>
+
+
+        <section class="search">
+
+            <div class="search-box">
+                <i data-lucide="search"></i>
+
+                <input
+                    type="text"
+                    id="destinationInput"
+                    placeholder="Digite o local que procura..."
+                    autocomplete="off"
+                >
+            </div>
+
+        </section>
+
+
+        <section class="locations">
+
+            <h2 class="section-title">Locais disponíveis</h2>
+
+
+            <!-- EXAMES -->
+
+            <div
+                class="location-card"
+                data-location="exames"
+                data-sector="andares de exames entrada de visitantes"
+            >
+
+                <div class="location-icon">
+                    <i data-lucide="file-search"></i>
+                </div>
+
+                <div class="location-info">
+
+                    <strong>Andares de Exames</strong>
+
+                    <small>
+                        Entrada de Visitantes
+                    </small>
+
+                    <small>
+                        Rua General Carneiro, 181
+                    </small>
+
+                    <button
+                        class="location-button"
+                        onclick="window.location.href='mapa.html?local=exames'"
+                    >
+                        Ver localização
+                        <i data-lucide="map-pin"></i>
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- MATERNIDADE -->
+
+            <div
+                class="location-card"
+                data-location="maternidade"
+                data-sector="maternidade anexo a"
+            >
+
+                <div class="location-icon">
+                    <i data-lucide="baby"></i>
+                </div>
+
+                <div class="location-info">
+
+                    <strong>Maternidade HC</strong>
+
+                    <small>
+                        Entrada da Maternidade
+                    </small>
+
+                    <small>
+                        Anexo A
+                    </small>
+
+                    <button
+                        class="location-button"
+                        onclick="window.location.href='mapa.html?local=maternidade'"
+                    >
+                        Ver localização
+                        <i data-lucide="map-pin"></i>
+                    </button>
+
+                </div>
+
+            </div>
+
+            <!-- MATERNIDADE - TÉRREO -->
+
+<div
+    class="location-card"
+    data-location="maternidade térreo"
+    data-sector="maternidade anexo a pronto atendimento ginecologia pronto atendimento obstetrícia ecografia ambulatório ginecologia ambulatório pré-natal ambulatório reprodução humana serviço social"
+>
+
+    <div class="location-icon">
+        <i data-lucide="baby"></i>
+    </div>
+
+    <div class="location-info">
+
+        <strong>Maternidade — Térreo</strong>
+
+        <small>
+            Pronto Atendimento Ginecologia
+        </small>
+
+        <small>
+            Pronto Atendimento Obstetrícia
+        </small>
+
+        <small>
+            Ecografia
+        </small>
+
+        <small>
+            Ambulatório Ginecologia
+        </small>
+
+        <small>
+            Ambulatório Pré-Natal
+        </small>
+
+        <small>
+            Ambulatório Reprodução Humana
+        </small>
+
+        <small>
+            Serviço Social
+        </small>
+
+        <button
+            class="location-button"
+            onclick="window.location.href='maternidade.html'"
+        >
+            Ver informações
+            <i data-lucide="arrow-right"></i>
+        </button>
+
+    </div>
+
+</div>
+
+
+<!-- MATERNIDADE - 1º ANDAR -->
+
+<div
+    class="location-card"
+    data-location="maternidade 1º andar"
+    data-sector="maternidade anexo a centro cirúrgico obstétrico alojamento conjunto medicina fetal"
+>
+
+    <div class="location-icon">
+        <i data-lucide="baby"></i>
+    </div>
+
+    <div class="location-info">
+
+        <strong>Maternidade — 1º andar</strong>
+
+        <small>
+            Centro Cirúrgico e Obstétrico
+        </small>
+
+        <small>
+            Alojamento Conjunto
+        </small>
+
+        <small>
+            Medicina Fetal
+        </small>
+
+        <button
+            class="location-button"
+            onclick="window.location.href='maternidade.html'"
+        >
+            Ver informações
+            <i data-lucide="arrow-right"></i>
+        </button>
+
+    </div>
+
+</div>
+
+
+<!-- MATERNIDADE - 2º ANDAR -->
+
+<div
+    class="location-card"
+    data-location="maternidade 2º andar"
+    data-sector="maternidade anexo a ipami instituto de pesquisa materno infantil"
+>
+
+    <div class="location-icon">
+        <i data-lucide="baby"></i>
+    </div>
+
+    <div class="location-info">
+
+        <strong>Maternidade — 2º andar</strong>
+
+        <small>
+            IPAMI - Instituto de Pesquisa Materno-Infantil
+        </small>
+
+        <button
+            class="location-button"
+            onclick="window.location.href='maternidade.html'"
+        >
+            Ver informações
+            <i data-lucide="arrow-right"></i>
+        </button>
+
+    </div>
+
+</div>
+
+
+<!-- MATERNIDADE - 3º ANDAR -->
+
+<div
+    class="location-card"
+    data-location="maternidade 3º andar"
+    data-sector="maternidade anexo a uti neonatal neonatologia"
+>
+
+    <div class="location-icon">
+        <i data-lucide="baby"></i>
+    </div>
+
+    <div class="location-info">
+
+        <strong>Maternidade — 3º andar</strong>
+
+        <small>
+            UTI Neonatal e Neonatologia
+        </small>
+
+        <button
+            class="location-button"
+            onclick="window.location.href='maternidade.html'"
+        >
+            Ver informações
+            <i data-lucide="arrow-right"></i>
+        </button>
+
+    </div>
+
+</div>
+
+
+<!-- MATERNIDADE - 4º ANDAR -->
+
+<div
+    class="location-card"
+    data-location="maternidade 4º andar"
+    data-sector="maternidade anexo a banco de leite humano salas de aula anfiteatro ambulatório dst"
+>
+
+    <div class="location-icon">
+        <i data-lucide="baby"></i>
+    </div>
+
+    <div class="location-info">
+
+        <strong>Maternidade — 4º andar</strong>
+
+        <small>
+            Banco de Leite Humano
+        </small>
+
+        <small>
+            Salas de Aula
+        </small>
+
+        <small>
+            Anfiteatro
+        </small>
+
+        <small>
+            Ambulatório DST
+        </small>
+
+        <button
+            class="location-button"
+            onclick="window.location.href='maternidade.html'"
+        >
+            Ver informações
+            <i data-lucide="arrow-right"></i>
+        </button>
+
+    </div>
+
+</div>
+
+
+<!-- MATERNIDADE - 5º ANDAR -->
+
+<div
+    class="location-card"
+    data-location="maternidade 5º andar"
+    data-sector="maternidade anexo a ginecologia reprodução humana"
+>
+
+    <div class="location-icon">
+        <i data-lucide="baby"></i>
+    </div>
+
+    <div class="location-info">
+
+        <strong>Maternidade — 5º andar</strong>
+
+        <small>
+            Ginecologia
+        </small>
+
+        <small>
+            Reprodução Humana
+        </small>
+
+        <button
+            class="location-button"
+            onclick="window.location.href='maternidade.html'"
+        >
+            Ver informações
+            <i data-lucide="arrow-right"></i>
+        </button>
+
+    </div>
+
+</div>
+
+
+<!-- MATERNIDADE - 6º ANDAR -->
+
+<div
+    class="location-card"
+    data-location="maternidade 6º andar"
+    data-sector="maternidade anexo a departamento de tocoginecologia"
+>
+
+    <div class="location-icon">
+        <i data-lucide="baby"></i>
+    </div>
+
+    <div class="location-info">
+
+        <strong>Maternidade — 6º andar</strong>
+
+        <small>
+            Departamento de Tocoginecologia
+        </small>
+
+        <button
+            class="location-button"
+            onclick="window.location.href='maternidade.html'"
+        >
+            Ver informações
+            <i data-lucide="arrow-right"></i>
+        </button>
+
+    </div>
+
+</div>
+
+
+<!-- MATERNIDADE - OUTROS -->
+
+<div
+    class="location-card"
+    data-location="maternidade outros roupa hospitalar"
+    data-sector="maternidade anexo a roupa hospitalar"
+>
+
+    <div class="location-icon">
+        <i data-lucide="baby"></i>
+    </div>
+
+    <div class="location-info">
+
+        <strong>Maternidade — Outros</strong>
+
+        <small>
+            Roupa Hospitalar
+        </small>
+
+        <button
+            class="location-button"
+            onclick="window.location.href='maternidade.html'"
+        >
+            Ver informações
+            <i data-lucide="arrow-right"></i>
+        </button>
+
+    </div>
+
+</div>
+
+
+            <!-- SAM'S -->
+
+            <div
+                class="location-card"
+                data-location="sams"
+                data-sector="sams sam's atendimento anexo b ambulancias"
+            >
+
+                <div class="location-icon">
+                    <i data-lucide="ambulance"></i>
+                </div>
+
+                <div class="location-info">
+
+                    <strong>SAM'S de Atendimento</strong>
+
+                    <small>
+                        Entrada de Ambulâncias — Anexo B
+                    </small>
+
+                    <small>
+                        Rua General Carneiro, 181
+                    </small>
+
+                    <button
+                        class="location-button"
+                        onclick="window.location.href='mapa.html?local=sams'"
+                    >
+                        Ver localização
+                        <i data-lucide="map-pin"></i>
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- LABORATÓRIOS -->
+
+                <div
+    class="location-card"
+    data-location="laboratorios laboratório exames laboratoriais"
+    data-sector="laboratórios laboratório rua padre camargo anexo g anexo d"
+>
+
+            <div class="location-icon">
+
+        <i data-lucide="test-tube"></i>
+
+             </div>
+
+            <div class="location-info">
+
+               <strong>Laboratórios</strong>
+
+             <small>
+            Entrada de Laboratórios
+             </small>
+
+             <small>
+            Rua Padre Camargo, 280
+             </small>
+
+        <button
+            class="location-button"
+            onclick="window.location.href='mapa.html?local=laboratorios'"
+        >
+
+            Ver localização
+
+            <i data-lucide="map-pin"></i>
+
+        </button>
+
+    </div>
+
+</div>
+    <!-- FARMÁCIA -->
+
+<div
+    class="location-card"
+    data-location="farmácia farmacia medicamentos"
+    data-sector="farmácia farmacia ao lado da maternidade"
+>
+
+    <div class="location-icon">
+
+        <i data-lucide="pill"></i>
+
+    </div>
+
+    <div class="location-info">
+
+        <strong>Farmácia</strong>
+
+        <small>
+            Medicamentos
+        </small>
+
+        <small>
+            Ao lado da Maternidade
+        </small>
+
+        <button
+            class="location-button"
+            onclick="window.location.href='mapa.html?local=farmacia'"
+        >
+
+            Ver localização
+
+            <i data-lucide="map-pin"></i>
+
+        </button>
+
+    </div>
+
+</div>
+    <!-- ANDARES DO PRÉDIO CENTRAL -->
+
+<div
+    class="location-card"
+    data-location="2º andar prédio central"
+    data-sector="banco de sangue endoscopia per oral medicina nuclear comissão de infecção hospitalar assessoria de marketing faturamento capela radiologia geral raio x tomografia hemodinâmica ultrassonografia ecografia ecocardiografia eletrocardiografia farmácia hospitalar"
+>
+    <div class="location-icon">
+        <i data-lucide="building-2"></i>
+    </div>
+
+    <div class="location-info">
+        <strong>2º andar — Prédio Central</strong>
+
+        <small>Banco de Sangue</small>
+        <small>Endoscopia Per-Oral</small>
+        <small>Medicina Nuclear</small>
+        <small>Radiologia Geral — Raio X</small>
+        <small>Tomografia</small>
+        <small>Hemodinâmica</small>
+        <small>Ultrassonografia e Ecografia</small>
+        <small>Ecocardiografia</small>
+        <small>Eletrocardiografia</small>
+        <small>Farmácia Hospitalar</small>
+    </div>
+</div>
+
+
+<div
+    class="location-card"
+    data-location="3º andar prédio central"
+    data-sector="eletroencefalografia doenças neurovasculares same arquivo endoscopia digestiva voluntários informática infectologia adulto pediátrica"
+>
+    <div class="location-icon">
+        <i data-lucide="building-2"></i>
+    </div>
+
+    <div class="location-info">
+        <strong>3º andar — Prédio Central</strong>
+
+        <small>Eletroencefalografia</small>
+        <small>Doenças Neurovasculares</small>
+        <small>SAME — Arquivo</small>
+        <small>Endoscopia Digestiva</small>
+        <small>Voluntários</small>
+        <small>Serviço de Informática</small>
+        <small>Infectologia Adulto e Pediátrica</small>
+    </div>
+</div>
+
+
+<div
+    class="location-card"
+    data-location="4º andar prédio central"
+    data-sector="função pulmonar neurologia epidemiologia"
+>
+    <div class="location-icon">
+        <i data-lucide="building-2"></i>
+    </div>
+
+    <div class="location-info">
+        <strong>4º andar — Prédio Central</strong>
+
+        <small>Função Pulmonar</small>
+        <small>Neurologia</small>
+        <small>Epidemiologia</small>
+    </div>
+</div>
+
+
+<div
+    class="location-card"
+    data-location="5º andar prédio central"
+    data-sector="centro cirúrgico"
+>
+    <div class="location-icon">
+        <i data-lucide="building-2"></i>
+    </div>
+
+    <div class="location-info">
+        <strong>5º andar — Prédio Central</strong>
+
+        <small>Centro Cirúrgico</small>
+    </div>
+</div>
+
+
+<div
+    class="location-card"
+    data-location="6º andar prédio central"
+    data-sector="cti ortopedia"
+>
+    <div class="location-icon">
+        <i data-lucide="building-2"></i>
+    </div>
+
+    <div class="location-info">
+        <strong>6º andar — Prédio Central</strong>
+
+        <small>CTI</small>
+        <small>Ortopedia</small>
+    </div>
+</div>
+
+
+<div
+    class="location-card"
+    data-location="7º andar prédio central"
+    data-sector="cirurgia torácica cardiovascular cirurgia aparelho digestivo cirurgia vascular"
+>
+    <div class="location-icon">
+        <i data-lucide="building-2"></i>
+    </div>
+
+    <div class="location-info">
+        <strong>7º andar — Prédio Central</strong>
+
+        <small>Cirurgia Torácica Cardiovascular</small>
+        <small>Cirurgia do Aparelho Digestivo</small>
+        <small>Disciplina de Cirurgia Vascular</small>
+    </div>
+</div>
+
+
+<div
+    class="location-card"
+    data-location="8º andar prédio central"
+    data-sector="cirurgia geral neurocirurgia"
+>
+    <div class="location-icon">
+        <i data-lucide="building-2"></i>
+    </div>
+
+    <div class="location-info">
+        <strong>8º andar — Prédio Central</strong>
+
+        <small>Cirurgia Geral</small>
+        <small>Neurocirurgia</small>
+    </div>
+</div>
+
+
+<div
+    class="location-card"
+    data-location="9º andar prédio central"
+    data-sector="transplante hepático urologia cirurgia plástica"
+>
+    <div class="location-icon">
+        <i data-lucide="building-2"></i>
+    </div>
+
+    <div class="location-info">
+        <strong>9º andar — Prédio Central</strong>
+
+        <small>Transplante Hepático</small>
+        <small>Urologia</small>
+        <small>Cirurgia Plástica</small>
+    </div>
+</div>
+
+
+<div
+    class="location-card"
+    data-location="10º andar prédio central"
+    data-sector="clínica médica masculina quimioterapia alto risco"
+>
+    <div class="location-icon">
+        <i data-lucide="building-2"></i>
+    </div>
+
+    <div class="location-info">
+        <strong>10º andar — Prédio Central</strong>
+
+        <small>Clínica Médica Masculina</small>
+        <small>Quimioterapia de Alto Risco</small>
+    </div>
+</div>
+
+
+<div
+    class="location-card"
+    data-location="11º andar prédio central"
+    data-sector="clínica médica feminina programa bioequivalência"
+>
+    <div class="location-icon">
+        <i data-lucide="building-2"></i>
+    </div>
+
+    <div class="location-info">
+        <strong>11º andar — Prédio Central</strong>
+
+        <small>Clínica Médica Feminina</small>
+        <small>Programa de Bioequivalência</small>
+    </div>
+</div>
+
+
+<div
+    class="location-card"
+    data-location="12º andar prédio central"
+    data-sector="nefrologia unidade coronariana"
+>
+    <div class="location-icon">
+        <i data-lucide="building-2"></i>
+    </div>
+
+    <div class="location-info">
+        <strong>12º andar — Prédio Central</strong>
+
+        <small>Nefrologia</small>
+        <small>Unidade Coronariana</small>
+    </div>
+</div>
+
+
+<div
+    class="location-card"
+    data-location="13º andar prédio central"
+    data-sector="otorrinolaringologia oftalmologia cirurgia pediátrica"
+>
+    <div class="location-icon">
+        <i data-lucide="building-2"></i>
+    </div>
+
+    <div class="location-info">
+        <strong>13º andar — Prédio Central</strong>
+
+        <small>Otorrinolaringologia</small>
+        <small>Oftalmologia</small>
+        <small>Cirurgia Pediátrica</small>
+    </div>
+</div>
+
+
+<div
+    class="location-card"
+    data-location="14º andar prédio central"
+    data-sector="pediatria uti pediátrica"
+>
+    <div class="location-icon">
+        <i data-lucide="building-2"></i>
+    </div>
+
+    <div class="location-info">
+        <strong>14º andar — Prédio Central</strong>
+
+        <small>Pediatria</small>
+        <small>UTI Pediátrica</small>
+    </div>
+</div>
+
+
+<div
+    class="location-card"
+    data-location="15º andar prédio central"
+    data-sector="transplante medula óssea"
+>
+    <div class="location-icon">
+        <i data-lucide="building-2"></i>
+    </div>
+
+    <div class="location-info">
+        <strong>15º andar — Prédio Central</strong>
+
+        <small>Transplante de Medula Óssea</small>
+    </div>
+</div>
+
+</div>
+
+<!-- ANDARES DO ANEXO B -->
+
+<div
+    class="location-card"
+    data-location="subsolo anexo b"
+    data-sector="vestiário engenharia clínica"
+>
+    <div class="location-icon">
+        <i data-lucide="building-2"></i>
+    </div>
+
+    <div class="location-info">
+        <strong>Subsolo — Anexo B</strong>
+        <small>Vestiário</small>
+        <small>Engenharia Clínica</small>
+    </div>
+</div>
+
+
+<div
+    class="location-card"
+    data-location="térreo anexo b"
+    data-sector="sam 1 sam 2"
+>
+    <div class="location-icon">
+        <i data-lucide="building-2"></i>
+    </div>
+
+    <div class="location-info">
+        <strong>Térreo — Anexo B</strong>
+        <small>SAM 1</small>
+        <small>SAM 2</small>
+    </div>
+</div>
+
+
+<div
+    class="location-card"
+    data-location="1º andar anexo b"
+    data-sector="sam 3 sam 4 sam 5 sam 6"
+>
+    <div class="location-icon">
+        <i data-lucide="building-2"></i>
+    </div>
+
+    <div class="location-info">
+        <strong>1º andar — Anexo B</strong>
+        <small>SAM 3</small>
+        <small>SAM 4</small>
+        <small>SAM 5</small>
+        <small>SAM 6</small>
+    </div>
+</div>
+
+
+<div
+    class="location-card"
+    data-location="2º andar anexo b"
+    data-sector="sam 7 sam 8"
+>
+    <div class="location-icon">
+        <i data-lucide="building-2"></i>
+    </div>
+
+    <div class="location-info">
+        <strong>2º andar — Anexo B</strong>
+        <small>SAM 7</small>
+        <small>SAM 8</small>
+    </div>
+</div>
+
+
+<div
+    class="location-card"
+    data-location="3º andar anexo b"
+    data-sector="unidade de processamento de materiais esterilizados"
+>
+    <div class="location-icon">
+        <i data-lucide="building-2"></i>
+    </div>
+
+    <div class="location-info">
+        <strong>3º andar — Anexo B</strong>
+        <small>Unidade de Processamento de Materiais Esterilizados</small>
+    </div>
+</div>
+
+
+<div
+    class="location-card"
+    data-location="4º andar anexo b"
+    data-sector="sam 15 ambulatório tmo hospital dia tmo ambulatório hematologia"
+>
+    <div class="location-icon">
+        <i data-lucide="building-2"></i>
+    </div>
+
+    <div class="location-info">
+        <strong>4º andar — Anexo B</strong>
+        <small>SAM 15</small>
+        <small>Ambulatório TMO</small>
+        <small>Hospital Dia TMO</small>
+        <small>Ambulatório Hematologia</small>
+    </div>
+</div>
+
+
+<div
+    class="location-card"
+    data-location="5º andar anexo b"
+    data-sector="sam 19 ambulatório otorrinolaringologia"
+>
+    <div class="location-icon">
+        <i data-lucide="building-2"></i>
+    </div>
+
+    <div class="location-info">
+        <strong>5º andar — Anexo B</strong>
+        <small>SAM 19</small>
+        <small>Ambulatório Otorrinolaringologia</small>
+    </div>
+</div>
+
+
+<div
+    class="location-card"
+    data-location="6º andar anexo b"
+    data-sector="sam 25 ambulatório neurologia"
+>
+    <div class="location-icon">
+        <i data-lucide="building-2"></i>
+    </div>
+
+    <div class="location-info">
+        <strong>6º andar — Anexo B</strong>
+        <small>SAM 25</small>
+        <small>Ambulatório Neurologia</small>
+    </div>
+</div>
+
+
+<div
+    class="location-card"
+    data-location="7º andar anexo b"
+    data-sector="sam 18 serviço de medicina física e reabilitação terapia ocupacional anfiteatro"
+>
+    <div class="location-icon">
+        <i data-lucide="building-2"></i>
+    </div>
+
+    <div class="location-info">
+        <strong>7º andar — Anexo B</strong>
+        <small>SAM 18</small>
+        <small>Serviço de Medicina Física e Reabilitação</small>
+        <small>Terapia Ocupacional</small>
+        <small>Anfiteatro</small>
+    </div>
+</div>
+
+        </section>
+
+
+        <footer>
+
+            <span>HC Fácil</span>
+            <span>•</span>
+            <span>Orientação dentro do complexo</span>
+
+        </footer>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
