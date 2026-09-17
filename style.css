@@ -2439,3 +2439,11 @@ body {
 .floors-list:not(.anexo-b-list) .floor-item[open] ul li:last-child {
     margin-bottom: 0 !important;
 }
+
+/* ESPAÇO ENTRE INFORMAÇÕES E BOTÃO */
+
+.location-info .location-button {
+    display: flex !important;
+    width: 100% !important;
+    margin-top: 14px !important;
+}
